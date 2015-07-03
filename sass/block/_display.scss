@@ -1,0 +1,38 @@
+.display {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		max-height: 167px;
+		overflow: scroll;
+		li {
+			font-size: 3.0rem;
+			text-align: right;
+			letter-spacing: 0.4px;
+			padding: 0 em(20, 30) 0 0;
+			color: darken($white, 12);
+			.operator {
+				@include span-columns(1.5 of 12);
+				float: left;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+	.active__operator {
+		@include span-columns(1.5 of 12);
+		font-size: 3.0rem;
+		text-align: center;
+		font-weight: bold;
+		min-height: 48px;
+	}
+	input {
+		border: none;
+		background: $dark;
+		color: $white;
+		font-size: 4.0rem;
+		text-align: right;
+		@include span-columns(10.5 of 12);
+		@include omega();
+	}
+}

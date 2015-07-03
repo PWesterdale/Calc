@@ -1,0 +1,8 @@
+button {
+	background: $dark;
+	color: $white;
+	border: none;
+	&:focus {
+		outline: none;
+	}
+}

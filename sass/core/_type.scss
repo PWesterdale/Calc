@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+    font-family: "brandon-grotesque", sans-serif;
+    line-height: 1.61;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* $rembase = 10px */
+/* $line-height-base = 26; */
+
+h1 {
+	font-size: 4.7rem;
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.7rem;
+	line-height: 1.0;
+	font-weight: 300;
+	@include media($mobile) {
+		line-height: 1.1;
+	}
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.3rem;
+	line-height: 1.2;
+	font-weight: 300;
+	@include media($mobile) {
+		line-height: 1.2;
+	}
+}
+
+h4 {
+	font-size: 2.3rem;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	font-weight: 300;
+}
+
+h5 {
+	font-size: 2.2rem;
+	line-height: 1.65;
+}
+
+body {
+	font-size: 1.8rem;
+	line-height: 1.61;
+}
+
+.font--light {
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	&:visited {
+	}
+}

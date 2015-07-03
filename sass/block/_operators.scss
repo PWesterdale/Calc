@@ -1,0 +1,14 @@
+.operators {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid $dark;
+	button {
+		padding: em(12, 18);
+		@include span-columns(3 of 12);
+		background: lighten($dark, 10);
+		border-right: 1px solid $dark;
+		&:nth-child(4n) {
+			border-right: none;
+		}
+	}
+}

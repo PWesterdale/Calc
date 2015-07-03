@@ -1,0 +1,24 @@
+$tablet-small: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 568px 4);
+$menu: new-breakpoint(max-width 800px 8);
+$footer: new-breakpoint(max-width 950px 12);
+
+$dark : #181818;
+$white : #E9E6E6;
+
+html, body {
+	height: 100%;
+}
+
+object {
+	pointer-events: none
+}
+
+body {
+	background: $dark;
+	color: $white;
+}
+
+.container {
+	@include outer-container;
+}

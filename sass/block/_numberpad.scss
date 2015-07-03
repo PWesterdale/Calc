@@ -1,0 +1,16 @@
+.numberpad
+{
+	@include row(table);
+	border-top: 1px solid $dark;
+	button {
+		@include span-columns(4 of 12);
+		@include omega(3n);
+		padding: em(12, 18);
+		background: lighten($dark, 16);
+		border-right: 1px solid $dark;
+		border-bottom: 1px solid $dark;
+		&:nth-child(3n) {
+			border-right: none;
+		}
+	}
+}
